@@ -2,12 +2,10 @@ package scik.vista.documento;
 
 import java.awt.Color;
 import java.awt.Component;
-
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.TableCellRenderer;
-
 import scik.controlador.documento.IDocumento;
 
 /**

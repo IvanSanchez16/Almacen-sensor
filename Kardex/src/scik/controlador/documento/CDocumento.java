@@ -26,6 +26,7 @@ import com.mxrck.autocompleter.TextAutoCompleter;
  * @author Yuliana Apaza
  * @version 2.0
  * @since 2015-10-05
+ *
  */
 
 public class CDocumento implements IDocumento

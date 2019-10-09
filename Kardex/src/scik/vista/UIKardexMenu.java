@@ -1,9 +1,10 @@
 package scik.vista;
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
-
+import javax.swing.*;
 import scik.controlador.IKardexMenu;
+import scik.recursos.Rutinas;
+
+import java.awt.*;
 
 /**
  * Vista principal del Menu
@@ -67,7 +68,9 @@ public class UIKardexMenu extends javax.swing.JFrame
         itmAcerca = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono.png")).getImage());
+
+        ImageIcon imgIcono= new ImageIcon(getClass().getResource("/scik/recursos/icono_sensor.png"));
+        setIconImage(new ImageIcon(imgIcono.getImage().getScaledInstance(80,120, Image.SCALE_SMOOTH)).getImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter()
         {
@@ -283,7 +286,8 @@ public class UIKardexMenu extends javax.swing.JFrame
         );
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/logo.png"))); // NOI18N
+        ImageIcon img= new ImageIcon(getClass().getResource("/scik/recursos/SENSOR.png"));
+        jLabel2.setIcon(new ImageIcon(img.getImage().getScaledInstance(349,68, Image.SCALE_SMOOTH)));  // NOI18N
 
         jMenu1.setText("Archivo");
 

@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 import com.mysql.jdbc.Connection;
-import static java.lang.System.err;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

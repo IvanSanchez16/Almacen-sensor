@@ -5,6 +5,8 @@ import javax.swing.JOptionPane;
 
 import scik.controlador.ILogin;
 
+import java.awt.*;
+
 /**
  * Vista principal del Login de usuario
  * <p/>
@@ -36,8 +38,8 @@ public class UILogin extends javax.swing.JFrame
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
-        txtPass = new javax.swing.JPasswordField();
+        txtUsuario = new javax.swing.JTextField("Desarrollo");
+        txtPass = new javax.swing.JPasswordField("Tony99");
         jPanel2 = new javax.swing.JPanel();
         btnIngresar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
@@ -52,7 +54,8 @@ public class UILogin extends javax.swing.JFrame
         itmAcerca = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono_login.png")).getImage());
+        ImageIcon imgIcono= new ImageIcon(getClass().getResource("/scik/recursos/login_sensor.png"));
+        setIconImage(new ImageIcon(imgIcono.getImage().getScaledInstance(80,120, Image.SCALE_SMOOTH)).getImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter()
         {
