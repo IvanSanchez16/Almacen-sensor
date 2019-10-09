@@ -4,9 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
 import javax.swing.UIManager;
-
 import scik.controlador.CLogin;
 import scik.modelo.Conexion;
 import scik.modelo.Usuario;

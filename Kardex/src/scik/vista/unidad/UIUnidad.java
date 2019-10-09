@@ -83,7 +83,7 @@ public class UIUnidad extends javax.swing.JFrame
         search = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono.png")).getImage());
+        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono_sensor.png")).getImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {

@@ -1,8 +1,8 @@
 package scik.vista.usuario;
 
-import java.awt.Color;
-import java.awt.Component;
+import java.awt.*;
 
+import javax.swing.*;
 import javax.swing.table.TableCellRenderer;
 
 import scik.controlador.usuario.IUsuario;
@@ -65,7 +65,8 @@ public class UIUsuario extends javax.swing.JFrame
         btnEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono.png")).getImage());
+        ImageIcon imgIcono= new ImageIcon(getClass().getResource("/scik/recursos/icono_sensor.png"));
+        setIconImage(new ImageIcon(imgIcono.getImage().getScaledInstance(80,120, Image.SCALE_SMOOTH)).getImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {

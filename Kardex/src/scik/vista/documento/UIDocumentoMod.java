@@ -2,6 +2,9 @@ package scik.vista.documento;
 
 import scik.controlador.documento.IDocumentoMod;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * Vista principal de Modificar Documento
  * <p/>
@@ -41,7 +44,8 @@ public class UIDocumentoMod extends javax.swing.JFrame
         jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono.png")).getImage());
+        ImageIcon imgIcono= new ImageIcon(getClass().getResource("/scik/recursos/icono_sensor.png"));
+        setIconImage(new ImageIcon(imgIcono.getImage().getScaledInstance(80,120, Image.SCALE_SMOOTH)).getImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {

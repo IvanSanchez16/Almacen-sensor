@@ -2,6 +2,9 @@ package scik.vista.consulta;
 
 import scik.controlador.consulta.ISalida;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * Vista principal de Consulta de Salida de Productos
  * <p/>
@@ -45,7 +48,8 @@ public class UISalida extends javax.swing.JFrame
         btnReporte = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono.png")).getImage());
+        ImageIcon imgIcono= new ImageIcon(getClass().getResource("/scik/recursos/icono_sensor.png"));
+        setIconImage(new ImageIcon(imgIcono.getImage().getScaledInstance(80,120, Image.SCALE_SMOOTH)).getImage());
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);

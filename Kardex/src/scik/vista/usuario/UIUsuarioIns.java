@@ -2,6 +2,9 @@ package scik.vista.usuario;
 
 import scik.controlador.usuario.IUsuarioIns;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * Vista principal de Insertar Usuario
  * <p/>
@@ -57,7 +60,8 @@ public class UIUsuarioIns extends javax.swing.JFrame
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/scik/recursos/icono.png")).getImage());
+        ImageIcon imgIcono= new ImageIcon(getClass().getResource("/scik/recursos/icono_sensor.png"));
+        setIconImage(new ImageIcon(imgIcono.getImage().getScaledInstance(80,120, Image.SCALE_SMOOTH)).getImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
